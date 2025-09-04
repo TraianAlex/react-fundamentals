@@ -11,7 +11,8 @@ const useBids = (houseId) => {
       setLoadingState(loadingStatus.isLoading);
       try {
         const response =
-          await fetch(`https://localhost:4000/bid/${houseId}`);
+          // await fetch(`https://localhost:4000/bid/${houseId}`);
+        await fetch(`https://didactic-engine-59pxpjprgpf7xx5-4000.app.github.dev/bid/${houseId}`);
         const bids = await response.json();
         setBids(bids);
         setLoadingState(loadingStatus.loaded);
@@ -23,7 +24,8 @@ const useBids = (houseId) => {
   }, [houseId]);
 
   const postBid = async (bid) => {
-    const rsp = await fetch("https://localhost:4000/bid", {
+    // const rsp = await fetch("https://localhost:4000/bid", {
+    const rsp = await fetch("https://didactic-engine-59pxpjprgpf7xx5-4000.app.github.dev/bid", {
       method: "POST",
       headers: {
         Accept: "application/json",
