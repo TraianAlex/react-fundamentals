@@ -12,8 +12,8 @@ function App() {
     []
   );
 
-  const [nav, setNav] =
-    useState({ current: navValues.home, navigate });
+  const [nav, setNav] = useState({ current: navValues.home, navigate });
+
   return (
     <navigationContext.Provider value={nav}>
       <ErrorBoundary fallback="Something went wrong!">

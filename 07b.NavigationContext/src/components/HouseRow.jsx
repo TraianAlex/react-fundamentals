@@ -7,6 +7,7 @@ const HouseRow = ({ house }) => {
   //uncomment to test error boundary
   //throw new Error();
   const { navigate } = useContext(navigationContext);
+
   return (
     <tr onClick={() => navigate(navValues.house, house)}>
       <td>{house.address}</td>
