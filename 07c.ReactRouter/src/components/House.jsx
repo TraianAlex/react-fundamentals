@@ -4,6 +4,7 @@ import currencyFormatter from "../helpers/currencyFormatter";
 const House = () => {
   const location = useLocation();
   const { house } = location.state;
+
   return (
     <>
       <div className="row">
