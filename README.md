@@ -1,5 +1,3 @@
-These are the projects shown in the Pluralsight course "React Fundamentals". The number in front is the module number in the course.
+React Fundamentals
 
-You can run projects by going to their directory and
-- restoring the npm packages with npm install (only once)
-- type: "npm run dev"
+npm run dev
