@@ -10,6 +10,7 @@ const subtitleStyle = {
 
 const Banner = ({ children }) => {
   const navigate = useNavigate();
+
   return (
     <header className="row mb-4">
       <div className="col-5">

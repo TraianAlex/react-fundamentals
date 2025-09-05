@@ -5,6 +5,7 @@ import Bids from "./bids";
 const House = () => {
   const location = useLocation();
   const { house } = location.state;
+
   return (
     <>
       <div className="row">
